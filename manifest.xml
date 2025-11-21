@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>d390280c-37a2-421e-ac5a-206fb3d34598</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Custom Date Picker"/>
+  <Description DefaultValue="A simple date picker add-in for Excel."/>
+    
+    <!-- URL updated to your GitHub Pages URL -->
+  <IconUrl DefaultValue="https://utkarsh121.github.io/x64datepicker/assets/icon-32.png"/>
+    <!-- URL updated to your GitHub Pages URL -->
+  <HighResolutionIconUrl DefaultValue="https://utkarsh121.github.io/x64datepicker/assets/icon-64.png"/>
+    
+  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <AppDomains>
+    <!-- Domain updated to your GitHub Pages domain -->
+    <AppDomain>https://utkarsh121.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <!-- URL updated to your GitHub Pages URL -->
+    <SourceLocation DefaultValue="https://utkarsh121.github.io/x64datepicker/taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+    <!-- URL updated to your GitHub Pages URL -->
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TaskpaneButton">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+    <!-- SourceLocation URL updated via Taskpane.Url resource -->
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+            <!-- URLs updated to your GitHub Pages URL -->
+        <bt:Image id="Icon.16x16" DefaultValue="https://utkarsh121.github.io/x64datepicker/assets/icon-16.png"/>
+            <!-- URLs updated to your GitHub Pages URL -->
+        <bt:Image id="Icon.32x32" DefaultValue="https://utkarsh121.github.io/x64datepicker/assets/icon-32.png"/>
+            <!-- URLs updated to your GitHub Pages URL -->
+        <bt:Image id="Icon.80x80" DefaultValue="https://utkarsh121.github.io/x64datepicker/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <!-- URL updated to your GitHub Pages URL -->
+        <bt:Url id="Commands.Url" DefaultValue="https://utkarsh121.github.io/x64datepicker/commands.html"/>
+        <!-- URL updated to your GitHub Pages URL -->
+        <bt:Url id="Taskpane.Url" DefaultValue="https://utkarsh121.github.io/x64datepicker/taskpane.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with your Custom Date Picker!"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Date Picker Tools"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Date Picker"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Your Custom Date Picker loaded successfully. Go to the HOME tab and click the 'Date Picker' button to get started."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Date Picker calendar task pane."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
