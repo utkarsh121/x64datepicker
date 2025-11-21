@@ -15,7 +15,7 @@ This add-in is shared using a mechanism called "sideloading," which requires a s
 
 ### Step 1: Download the Manifest File
 
-**Click here to download the required manifest file:**
+**Click here to download the required manifest file (or right click ans save-as, if click does not work):**
 
 #### [Download manifest.xml Directly](https://raw.githubusercontent.com/utkarsh121/x64datepicker/main/manifest.xml)
 
