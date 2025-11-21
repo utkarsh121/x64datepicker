@@ -4,19 +4,22 @@ This is a simple, modern Task Pane Add-in for Microsoft Excel that provides a ca
 
 ## ✨ Features
 
-* **Quick Insertion:** Select any date in the calendar to insert the date value directly into the selected Excel cell.
-* **Automatic Formatting:** The selected cell is automatically formatted to the standard date style (`m/d/yyyy`).
-* **Intuitive Navigation:** Navigate month-by-month and year-by-year using the built-in controls.
-* **Real-Time Status:** Provides instant feedback showing the inserted date and the target cell address.
+  * **Quick Insertion:** Select any date in the calendar to insert the date value directly into the selected Excel cell.
+  * **Automatic Formatting:** The selected cell is automatically formatted to the standard date style (`m/d/yyyy`).
+  * **Intuitive Navigation:** Navigate month-by-month and year-by-year using the built-in controls.
+  * **Real-Time Status:** Provides instant feedback showing the inserted date and the target cell address.
 
 ## 🚀 Installation & Sharing (Sideloading)
 
 This add-in is shared using a mechanism called "sideloading," which requires a single file: the `manifest.xml`. Your friends only need this file to install the add-in—they do not need to install Node, NPM, or access any local web server.
 
-### Step 1: Get the Manifest File
+### Step 1: Download the Manifest File
 
-1.  Go to the main repository page: **[https://github.com/utkarsh121/x64datepicker](https://github.com/utkarsh121/x64datepicker)**
-2.  Locate and download the **`manifest.xml`** file.
+**Click here to download the required manifest file:**
+
+#### [Download manifest.xml Directly](https://raw.githubusercontent.com/utkarsh121/x64datepicker/main/manifest.xml)
+
+This link is a direct download of the XML file, ready to be uploaded to Excel.
 
 ### Step 2: Sideload in Excel
 
@@ -39,9 +42,9 @@ The web content for this add-in is hosted live at: **[https://utkarsh121.github.
 
 ### Core Technologies
 
-* **Office JavaScript API:** The standard library for interacting with Excel objects.
-* **Pure JavaScript:** Handles all calendar calculations and front-end logic.
-* **Office UI Fabric Core:** Used for consistent styling and Microsoft Fluent UI icons.
+  * **Office JavaScript API:** The standard library for interacting with Excel objects.
+  * **Pure JavaScript:** Handles all calendar calculations and front-end logic.
+  * **Office UI Fabric Core:** Used for consistent styling and Microsoft Fluent UI icons.
 
 ## 📄 License
 
