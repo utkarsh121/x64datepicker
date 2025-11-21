@@ -1,0 +1,71 @@
+/*
+ * TASKPANE.CSS
+ * Custom styles for the Calendar Add-in.
+ */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f3f2f1; /* Light neutral background */
+}
+
+/* Calendar Container */
+#calendar-container {
+    padding: 10px;
+}
+
+/* Calendar Table */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+.calendar-table th {
+    background-color: #e8e8e8;
+    color: #444;
+    padding: 6px 0;
+    font-weight: 600;
+}
+
+.calendar-table td {
+    padding: 5px;
+    height: 30px; /* Uniform cell height */
+    text-align: center;
+    cursor: default;
+}
+
+/* Date Cell Styling (Days of the month) */
+.date-cell {
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.1s ease;
+}
+
+/* Hover effect for clickable dates */
+.date-cell:hover {
+    background-color: #0078d4; /* Theme Primary Blue */
+    color: white;
+}
+
+/* Style for today's date */
+.today {
+    font-weight: 700;
+    border: 2px solid #005a9e; /* Darker border for emphasis */
+}
+
+/* Style for dates outside the current month (optional) */
+.outside-month {
+    color: #bbb;
+    pointer-events: none; /* Make non-clickable */
+}
+
+/* Status Bar Style */
+#status-bar {
+    padding: 5px;
+}

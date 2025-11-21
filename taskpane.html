@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Updated title for the browser/add-in window -->
+    <title>Custom Date Picker Add-in</title>
+
+    <!-- Link to Office UI Fabric Core CSS for Fluent UI icons and styling -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="ms-font-m ms-bgColor-white">
+        <!-- New Title Text and Icon Logo Placeholder -->
+        <header class="ms-font-xl ms-bgColor-neutralLighter ms-textAlign-center ms-fontColor-neutralDark p-2">
+            <p class="ms-font-xxl">
+                <!-- Placeholder Logo Icon: CalendarDay -->
+                <span class="ms-Icon ms-Icon--CalendarDay ms-fontColor-themePrimary"></span>
+                Custom Date Picker
+            </p>
+        </header>
+
+        <div id="calendar-container" class="ms-textAlign-center ms-u-borderBottom--none">
+            Loading Calendar...
+        </div>
+
+        <footer id="status-bar" class="ms-font-s ms-fontWeight-bold ms-bgColor-themePrimary ms-fontColor-white ms-textAlign-center">
+            Ready to insert date.
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/Office.js"></script>
+    
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>
